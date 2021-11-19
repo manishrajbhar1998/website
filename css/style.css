@@ -1,0 +1,357 @@
+@font-face {
+    font-family: font;
+    src: url(../fonts/Noto_Sans_KR/NotoSansKR-Regular.otf);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+h1,h2,h3,h4,h5{  font-family: font;  
+}
+
+/* body start */
+body{
+    margin: 0;
+    padding: 0;
+}
+.uni-padding{
+    padding: 0 7%;
+
+}
+/* topbar  */
+#topbar{
+    background-color: #576574;
+    padding-top: 18px;
+    padding-bottom: 18px;
+    overflow: auto;
+}
+#toll-free{
+    float: left;
+    color: #fff;
+    margin-top: 8px;
+}
+#social-icons{
+    float: right;
+}
+.fab{
+    color: #fff;
+    padding: 0 7px;
+    font-size: 40px;
+}
+
+/*    logobar      */
+#logobar img{
+    width: 200px;
+    margin: 25px 0;
+}
+
+/* nav bar */
+#navbar{
+    background-color: lightsalmon;
+}
+#navbar ul li{ 
+    display: inline-block;
+    padding: 20px 0;
+    padding-right: 30px;
+    list-style: none;
+}
+#navbar ul li a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+}
+
+/* Poster part */
+#poster{
+    background:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(https://images.unsplash.com/photo-1566009002888-a8e15b0e1650?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1789&q=80);
+    height: 70vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    color: #fff;
+    display: flex;
+    flex-flow: wrap column;
+    justify-content: center;
+    text-align: center;
+}
+#poster h1{
+    margin-bottom: 10px;
+    font-size: 40px;
+}
+#poster p{
+    line-height: 20px;
+    font-size: 20px;
+}
+
+/* why section part  */
+#whysection{
+    overflow: auto;
+    margin-bottom: 30px;
+}
+.red-heading{
+    color: tomato;
+    text-align: center;
+    font-size: 30px;
+    margin: 30px 0;
+    border-bottom: 3px solid tomato;
+
+}
+.section33{
+    float: left;
+    width: 33.33%;
+    text-align: center;
+    padding: 0 30px;
+    border-right: 2px solid tomato;
+    
+}
+#whysection .section33:nth-child(4){
+    border-right: none;
+}
+.section33 img{
+    width: 80%;
+    height: 280px;
+}
+.section33 h2{
+   margin: 10px 0;
+}
+.section33 p{
+    margin-bottom: 15px;
+}
+
+
+/* contact section part */
+#contact{
+ background-color: tomato;
+ color: #fff;
+ overflow: hidden;
+ display: flex;
+ align-items: center;
+    
+}
+ .section70{
+width: 70%;
+float: left;
+}
+.section70 h1{
+    margin: 20px 0;
+}
+.section70 p{
+    margin-bottom: 20px;
+    line-height: 25px;
+}
+.section30{
+  width: 30%;
+  float: right;
+  text-align: center;
+  padding-top: 50px;
+}
+#contact-btn{
+    background-color: #fff;
+    color: tomato;
+    padding: 15px 50px;
+    text-decoration: none;
+    font-size: 20PX;
+    font-weight: bold;
+    
+}
+
+/* Blog srction part */
+.car-width img{
+    width: 100%;
+    height: 280px;
+}
+.car-width a{
+    text-decoration: none;
+    color: tomato;
+    font-weight: 800;
+
+}
+
+/* subscribe section part */
+#subscribe{
+    background-color: tomato;
+    overflow: hidden;
+    height: 15vh;
+    color: #fff;
+    text-align: center;
+    display: flex;
+    align-items: center;
+}
+.section50{
+   width: 50%;
+   float: left;
+}
+.section50 h2{
+    text-align: right;
+    font-size: 27px;
+}
+.section50 input[type="email"]{
+    padding: 10px 20px;
+    outline: none;
+    font-size: 15px;
+    color: tomato;
+    margin-right: 20px;
+    width: 45%;
+}
+.section50 input[type="submit"]{
+    padding: 10px 35px;
+    border: 0px;
+    color: tomato;
+    font-size: 15px;
+
+}
+
+
+/* footer */
+#implink{
+    background-color: #576574;
+    color: #fff;
+    overflow: auto;
+}
+.div33{
+    width: 33.33%;
+    float: left;
+    padding: 25px 50px;
+}
+.div33 h3{
+    text-decoration: underline;
+    text-underline-offset: 5px;
+    text-decoration-thickness: 2px;
+    margin-bottom: 10px;
+}
+#links li{
+    list-style: none;
+    padding-top: 5px;
+}
+#links li a{
+    color: #fff;
+    text-decoration: none;
+}
+#implink .div33:nth-child(2){
+    padding-left: 130px;
+}
+
+/* copyright */
+#copyright{
+    background-color: #386aa0;
+    text-align: center;
+    color: #fff;
+    padding: 15px;
+    font-size: 18px;
+}
+
+/*  Responsive page 1 diseign start */
+
+@media only screen and (max-width: 760px){
+    #navbar ul li {
+        padding-right: 20px;
+    }
+    .section70 {
+        padding-right: 20px;
+    }
+    .section50 h2 {
+        text-align: left;
+        
+    }
+}
+
+/*  Responsive page 2 diseign start */
+
+@media only screen and (max-width: 500px){
+    #topbar {
+        text-align: center;
+    }
+    #toll-free {
+        float: none;
+        margin-bottom: 10px;
+    }
+    #social-icons{
+        float: none;
+    }
+    #logobar{
+        text-align: center;
+    }
+    #logobar img{
+        width: 150px;
+        margin: 10px 0;
+
+    }
+    #poster h1 {
+        margin-bottom: 10px;
+        font-size: 28px;
+    }
+    #poster p{
+        font-size: 16px;
+    }
+    #poster{
+        background:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(https://images.unsplash.com/photo-1566009002888-a8e15b0e1650?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1789&q=80);
+        height: 70vh;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        
+    }
+    .section33, .section70, .section50, .div33, .section30{
+        width: 100%;
+        border: 2px solid tomato;
+        margin-bottom: 15px;
+    }
+    .section33:nth-child(4){
+        border-right: 2px solid tomato !important;
+    }
+    .section33 img {
+        width: 100%;
+        height: 280px;
+    }
+    .section70, .section30{
+        text-align: center;
+        padding-right: 0;
+        float: none;
+    }
+}
+
+#navbar #mobile-cross,#mobile-bar{
+    display: none;
+}
+
+
+/* moblie menu  */
+@media only screen and (max-width:500px){
+    #navbar {
+        background-color: lightsalmon;
+        position: absolute;
+        top: 0;
+        height: 100vh;
+        padding: 0;
+        width: 300px;
+    }
+    #navbar ul li {
+        display: block;
+        padding: 20px;
+        padding-right: 30px;
+        list-style: none;
+        border-bottom: 1px solid #fff;
+    }
+    #mobile-cross{
+        text-align: right;
+    }
+    .fa-times-circle{
+        font-size: 35px;
+    }
+    #navbar{
+        left: -300px;
+        transition: all 0.5s;
+    }
+    #mobile-bar{
+        background-color: tomato;
+        color: #fff;
+        font-size: 30px;
+        padding: 10px;
+    }
+    #navbar #mobile-cross,#mobile-bar{
+        display: block;
+    }
+}
